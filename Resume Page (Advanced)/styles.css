@@ -1,0 +1,324 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font: 16px Helvetica, Sans-Serif;
+    line-height: 1.5;
+    background: url(images/noise.jpg);
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display:block;
+    clear: both;
+    overflow: hidden;
+}
+
+#page-wrap {
+    width: 800px;
+    margin: 40px auto 60px;
+}
+
+#main-nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav ul li{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#main-nav ul li a{
+    text-decoration: none;
+    border-bottom: none;
+    padding: 5px 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;    
+}
+
+#main-nav ul li.current a, #main-nav ul li a:hover{
+    border-top: 3px solid black;
+    color: black;
+    
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#pic {
+    float: right;
+    margin: -30px 0 0 0;
+}
+h1 {
+    margin: 0 0 16px 0;
+    padding: 0 0 16px 0;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #999;
+}
+h2 {
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    position: relative;
+}
+h2 span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+    font-family: Georgia, Serif;
+    font-size: 16px;
+    color: #999;
+    font-weight: normal;
+}
+p {
+    margin: 0 0 16px 0;
+}
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+a:hover {
+    border-bottom-style: solid;
+    color: black;
+}
+ul {
+    margin: 0 0 32px 17px;
+}
+#objective {
+    width: 500px;
+    float: left;
+}
+#objective p {
+    font-family: Georgia, Serif;
+    font-style: italic;
+    color: #666;
+}
+dt {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    text-align:right;
+    padding: 0 26px 0 0;
+    width: 150px;
+    float: left;
+    height: 100px;
+    border-right: 1px solid #999;
+}
+dd {
+    width: 600px;
+    float: right;
+}
+dl div{
+    margin-top: 15px;
+}
+
+#works{
+    margin: 0 auto;
+    width: 696px;
+}
+
+#works .work{
+    float: left;
+    margin: 8px;
+    box-shadow: 3px 3px 10px #999;
+}
+
+#works .work img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    -webkit-filter: grayscale(90%);
+    -moz-filter: grayscale(90%);
+    filter: grayscale(90%);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#works .work a{
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    border-bottom: none;
+    background-color: #efefef;
+}
+
+#works .work a:hover{
+    background-color: #666;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#works .work a:hover img{
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#works .work a:hover span{
+    color: #fff;
+}
+
+#works .work span{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+}
+
+#contacts p.head-message{
+    font-family: Georgia, serif;
+    color: #999;
+    font-size: 2em;
+    font-style: italic;
+}
+
+#contacts fieldset{
+    padding: 20px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+#contacts fieldset legend{
+    padding-left: 8px;
+    padding-right: 8px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+#contacts .field{
+    padding: 8px 0;
+}
+#contacts .field label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+#contacts .field label:after{
+    content: " :";
+}
+
+#contacts .required label:before{
+    content: "* ";
+    color: red;
+}
+
+#contacts .field input{
+    width: 300px;
+    padding: 5px;
+    font-size: 0.8em;
+    border: 1px dotted #999;
+    font-size: 12px;
+}
+
+#contacts textarea{
+    width: 300px;
+    border: 1px dotted #999;
+    resize: none;
+    padding: 5px;
+    height: 150px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#contacts .field input:focus,
+#contacts .field textarea:focus{
+    background-color: #efefef;
+}
+
+#contacts button[type=submit]{
+    margin-left: 175px;
+    font-size: 20px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    padding: 8px;
+    margin-top: 20px;
+    color: #999;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+:-moz-placeholder{
+    color: #999;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    color: #999;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    color: #999;
+    font-family: Georgia, serif;
+    font-style: italic;
+}

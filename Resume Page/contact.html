@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>Contacts | Kwun Yeung</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="page-wrap">
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Me</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="contacts">
+            <h1>Contacts</h1>
+            <p class="head-message">Feel free to drop me a message.<br/>This will go to my email box directly. ;)</p>
+            <form action="http://dev.creativeworks.com.hk/demo/apl/form.php" method="post" id="contact-form">
+                <fieldset>
+                    <legend>Please fill in the following details</legend>
+                    <div class="field required">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name"/>
+                    </div>
+                    <div class="field">
+                        <label for="tel">Tel</label>
+                        <input type="text" name="tel" id="tel"/>
+                    </div>
+                    <div class="field required">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"/>
+                    </div>
+                    <div class="field required">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
